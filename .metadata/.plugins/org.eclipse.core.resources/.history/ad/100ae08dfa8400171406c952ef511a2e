@@ -1,0 +1,18 @@
+import java.util.Stack;
+
+public class MyDataStracture {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Stack obj=new Stack();
+		obj.add("NYC");
+		obj.add("Boston");
+		obj.add("Manhattan");
+		obj.add("Pennington");
+		
+		System.out.println(obj.peek());
+
+	}
+
+}

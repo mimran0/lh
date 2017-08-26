@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+	BufferedReader br;
+	String line=null;
+	FileReader fr=null;
+	//creating file readter instance
+	try {
+		fr=new FileReader("C:\\Users\\imran\\workspace5\\Project5\\ReadTextFile.txt");
+	} catch (FileNotFoundException e) {
+		System.out.println("File not read");
+	}
+	//creating buffered reader instance
+	br=new BufferedReader(fr);
+	//reading data
+	try {
+		while((line=br.readLine())!=null){
+			System.out.println(line);
+		}
+	} catch (IOException e) {
+		System.out.println("File not found");
+	}
+
+	}
+
+}

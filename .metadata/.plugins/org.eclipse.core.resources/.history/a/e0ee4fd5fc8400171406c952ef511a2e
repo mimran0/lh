@@ -1,0 +1,46 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class MyDataStracture {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		///stack
+		/*Stack<String> obj=new Stack<String>();
+		obj.push("NYC");
+		obj.push("Boston");
+		obj.push("Manhattan");
+		obj.push("Pennington");
+		System.out.println(obj.peek());		
+		Iterator<String> lt=obj.listIterator();
+		while(lt.hasNext()){
+			System.out.println(lt.next());
+			//System.out.println(obj.pop());
+			//System.out.println(obj.peek());
+		}
+*/
+		///queue
+		Queue<String> obj2=new LinkedList<String>();
+		obj2.add("Love");
+		obj2.add("jealas");
+		obj2.add("hate");
+		obj2.add("like");
+		obj2.add("Pleasant");
+		obj2.add("EyeCandy");
+		
+		System.out.println(obj2.peek());
+		Iterator it=obj2.iterator();
+		while(it.hasNext()==true){
+			System.out.println(it.next());
+			obj2.poll();
+			if (obj2.poll()==null){
+			break;	
+			}
+		}
+		
+	}
+
+}
